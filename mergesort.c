@@ -70,7 +70,7 @@ void print(int arr[],int size)
 int main()
 {
 	
-	int arr[]={2,4,3,6,7,1};
+	int arr[]={2,4,3,6,7,1,6,10,5,0};
 	int size=sizeof(arr)/sizeof(arr[0]);
 	mergesort(arr,0,size-1);
 	print(arr,size);
