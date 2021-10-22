@@ -2,10 +2,10 @@
 
 void merge(int arr[],int l, int m, int r)
 {
-	int i,j,k;
+	int i,j,k; 
 	int n1=m-l+1;
 	int n2=r-m;
-	int L[n1], R[n2];
+	int L[n1], R[n2]; // Arrays that store
 	for(i=0;i<n1;i++)
 	{
 	L[i]=arr[l+i];
@@ -49,13 +49,12 @@ void merge(int arr[],int l, int m, int r)
 void mergesort(int arr[],int l,int r)
 {
 	int m;
-	if(l<r)
-	{
+	if(l<r){
 		m=l+(r-1)/2;
 		mergesort(arr,l,m);
 		mergesort(arr,m+1,r);
 		
-	merge(arr,l,m,r);	
+		merge(arr,l,m,r); // Merges two splitted arrays in sorted order.
 	}
 }
 void print(int arr[],int size)
